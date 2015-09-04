@@ -41,16 +41,17 @@ angular.module('starter.controllers', [])
   };
 })
 
-.controller('PlaylistsCtrl', function($scope) {
-  $scope.playlists = [
-    { title: 'Reggae', id: 1 },
-    { title: 'Chill', id: 2 },
-    { title: 'Dubstep', id: 3 },
-    { title: 'Indie', id: 4 },
-    { title: 'Rap', id: 5 },
-    { title: 'Cowbell', id: 6 }
-  ];
+.controller('PlaylistCtrl', function($scope, $stateParams) {
 })
 
-.controller('PlaylistCtrl', function($scope, $stateParams) {
+.controller('AttributesCtrl', function($scope, $stateParams) {
+  var ATTR_INIT_VALUE = 10;
+  $scope.attributes = [
+    { title: 'Strength', id: 'str', value: ATTR_INIT_VALUE },
+    { title: 'Dexterity', id: 'dex', value: ATTR_INIT_VALUE },
+    { title: 'Constitution', id: 'con', value: ATTR_INIT_VALUE },
+    { title: 'Intelligence', id: 'int', value: ATTR_INIT_VALUE },
+    { title: 'Wisdom', id: 'wis', value: ATTR_INIT_VALUE },
+    { title: 'Charisma', id: 'cha', value: ATTR_INIT_VALUE }
+  ];
 });
