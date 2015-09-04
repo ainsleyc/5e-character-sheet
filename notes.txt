@@ -1,0 +1,28 @@
+
+Picklists
+* Class
+* Armor
+* Weapons
+* Spells
+
+Integer Lists
+* Attributes
+
+Boolean Lists
+* Skills
+
+Derived Values
+* Saving Throws
+* Armor Class
+* Initiative
+* Speed
+
+Editable Play Values
+* Hit Points
+* Temporary Hit Points
+* Hit Dice
+* Death Saves
+
+
+ 
+
