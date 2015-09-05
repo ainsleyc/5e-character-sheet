@@ -32,13 +32,6 @@ angular.module('starter', ['ionic', 'starter.controllers'])
     controller: 'AppCtrl'
   })
 
-  .state('app.attributes', {
-    url: '/app',
-    abstract: true,
-    templateUrl: 'templates/attributes.html',
-    controller: 'AttributeCtrl'
-  })
-
   .state('app.search', {
     url: '/search',
     views: {
@@ -56,16 +49,15 @@ angular.module('starter', ['ionic', 'starter.controllers'])
         }
       }
     })
-
-  .state('app.playlists', {
-    url: '/playlists',
-    views: {
-      'menuContent': {
-        templateUrl: 'templates/playlists.html',
-        controller: 'PlaylistsCtrl'
+    .state('app.attributes', {
+      url: '/attributes',
+      views: {
+        'menuContent': {
+          templateUrl: 'templates/attributes.html',
+          controller: 'AttributesCtrl'
+        }
       }
-    }
-  })
+    })
 
   .state('app.single', {
     url: '/playlists/:playlistId',
