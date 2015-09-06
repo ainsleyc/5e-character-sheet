@@ -1,27 +1,34 @@
 
-Picklists
-* Class
-* Armor
-* Weapons
-* Spells
-
-Integer Lists
-* Attributes
-
-Boolean Lists
-* Skills
-
-Derived Values
+Play Menu
+* Proficiency
 * Saving Throws
 * Armor Class
 * Initiative
 * Speed
-
-Editable Play Values
 * Hit Points
 * Temporary Hit Points
 * Hit Dice
 * Death Saves
+
+Class Menu
+* 
+
+Attribute Menu
+* Attribute Selectors
+  * List item per attribute, with +/- buttons
+
+Skills Menu
+* Skill selection
+  * Checkbox list of proficient skills
+
+Equipment Menu
+* Armor
+  * Picklist with modifier selector (?)
+* Weapons
+  * Multiple picklists with modifier selector (?)
+
+Spells Menu
+* 
 
 
  

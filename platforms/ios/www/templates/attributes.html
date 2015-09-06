@@ -3,6 +3,8 @@
     <ion-list>
       <ion-item ng-repeat="attribute in attributes" href="#/app/attribute/{{attribute.id}}">
         {{attribute.title}}
+        <ion-option-button>-</ion-option-button>
+        <ion-option-button>+</ion-option-button>
       </ion-item>
     </ion-list>
   </ion-content>

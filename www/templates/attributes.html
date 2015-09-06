@@ -3,6 +3,8 @@
     <ion-list>
       <ion-item ng-repeat="attribute in attributes" href="#/app/attribute/{{attribute.id}}">
         {{attribute.title}}
+        <a class="button button-icon icon ion-minus-circled"></a>
+        <a class="button button-icon icon ion-plus-circled"></a>
       </ion-item>
     </ion-list>
   </ion-content>
