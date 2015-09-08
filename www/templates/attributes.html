@@ -1,10 +1,10 @@
 <ion-view view-title="Attributes">
   <ion-content>
     <ion-list>
-      <ion-item ng-repeat="attribute in attributes" href="#/app/attribute/{{attribute.id}}">
-        {{attribute.title}}
+      <ion-item class="attribute-item" ng-repeat="attribute in attributes" href="#/app/attribute/{{attribute.id}}">
+        <span class="attribute-item-title">{{attribute.title}}</span>
         <a class="button button-icon icon ion-minus-circled"></a>
-        <span type="number">10</span>
+        <span class="attribute-item-value" type="number">10</span>
         <a class="button button-icon icon ion-plus-circled"></a>
       </ion-item>
     </ion-list>

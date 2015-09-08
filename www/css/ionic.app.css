@@ -7699,3 +7699,8 @@ a.button {
   opacity: 0;
   -webkit-transition-duration: 0s;
   transition-duration: 0s; }
+
+.attribute-item .attribute-item-title {
+  font-size: 20px; }
+.attribute-item .attribute-item-value {
+  font-size: 20px; }
