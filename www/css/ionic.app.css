@@ -7700,7 +7700,19 @@ a.button {
   -webkit-transition-duration: 0s;
   transition-duration: 0s; }
 
+.attribute-item .attribute-item-text {
+  font-size: 20px; }
 .attribute-item .attribute-item-title {
-  font-size: 20px; }
+  padding-top: 12px;
+  padding-bottom: 12px;
+  display: inline-block; }
+.attribute-item .attribute-item-button {
+  float: right;
+  display: inline-block; }
 .attribute-item .attribute-item-value {
-  font-size: 20px; }
+  padding-top: 12px;
+  padding-bottom: 12px;
+  padding-left: 6px;
+  padding-right: 6px;
+  float: right;
+  display: inline-block; }

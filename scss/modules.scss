@@ -1,8 +1,22 @@
 .attribute-item {
-  .attribute-item-title {
+  .attribute-item-text {
     font-size: 20px;
   }
+  .attribute-item-title {
+    padding-top: 12px;
+    padding-bottom: 12px;
+    display: inline-block;
+  }
+  .attribute-item-button {
+    float: right;
+    display: inline-block;
+  }
   .attribute-item-value {
-    font-size: 20px;
+    padding-top: 12px;
+    padding-bottom: 12px;
+    padding-left: 6px;
+    padding-right: 6px;
+    float: right;
+    display: inline-block;
   }
 }

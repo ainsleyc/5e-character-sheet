@@ -2,10 +2,18 @@
   <ion-content>
     <ion-list>
       <ion-item class="attribute-item" ng-repeat="attribute in attributes" href="#/app/attribute/{{attribute.id}}">
-        <span class="attribute-item-title">{{attribute.title}}</span>
-        <a class="button button-icon icon ion-minus-circled"></a>
-        <span class="attribute-item-value" type="number">10</span>
-        <a class="button button-icon icon ion-plus-circled"></a>
+        <div class="attribute-item-title">
+          <span class="attribute-item-text">{{attribute.title}}</span>
+        </div>
+        <div class="attribute-item-button">
+          <a class="button button-icon icon ion-minus-circled"></a>
+        </div>
+        <div class="attribute-item-value">
+          <span class="attribute-item-text" type="number">10</span>
+        </div>
+        <div class="attribute-item-button">
+          <a class="button button-icon icon ion-plus-circled"></a>
+        </div>
       </ion-item>
     </ion-list>
   </ion-content>
