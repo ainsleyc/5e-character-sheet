@@ -44,14 +44,11 @@ angular.module('5eSheet.controllers', [])
 .controller('PlaylistCtrl', function($scope, $stateParams) {
 })
 
-.controller('AttributesCtrl', function($scope, $stateParams) {
-  var ATTR_INIT_VALUE = 10;
-  $scope.attributes = [
-    { title: 'Strength', id: 'str', value: ATTR_INIT_VALUE },
-    { title: 'Dexterity', id: 'dex', value: ATTR_INIT_VALUE },
-    { title: 'Constitution', id: 'con', value: ATTR_INIT_VALUE },
-    { title: 'Intelligence', id: 'int', value: ATTR_INIT_VALUE },
-    { title: 'Wisdom', id: 'wis', value: ATTR_INIT_VALUE },
-    { title: 'Charisma', id: 'cha', value: ATTR_INIT_VALUE }
-  ];
+.controller('AttributesCtrl', function($scope, $stateParams, AttributeModel) {
+  $scope.attributes = AttributeModel.get();
+  $scope.inc = function(e) {
+    console.log(e);
+    AttributeModel.inc;
+  }
+  $scope.dec = AttributeModel.dec;
 });

@@ -1,18 +1,18 @@
 <ion-view view-title="Attributes">
   <ion-content>
     <ion-list>
-      <ion-item class="attribute-item" ng-repeat="attribute in attributes" href="#/app/attribute/{{attribute.id}}">
+      <ion-item class="attribute-item" ng-repeat="attribute in attributes">
         <div class="attribute-item-title">
-          <span class="attribute-item-text">{{attribute.title}}</span>
+          <span class="attribute-item-text">{{attribute.label}}</span>
         </div>
         <div class="attribute-item-button">
-          <a class="button button-icon icon ion-minus-circled"></a>
+          <a class="button button-icon icon ion-minus-circled" ng-click="dec('{{attribute.id}}')"></a>
         </div>
         <div class="attribute-item-value">
-          <span class="attribute-item-text" type="number">10</span>
+          <span class="attribute-item-text" type="number">{{attribute.value}}</span>
         </div>
         <div class="attribute-item-button">
-          <a class="button button-icon icon ion-plus-circled"></a>
+          <a class="button button-icon icon ion-plus-circled" ng-click="inc('{{attribute.id}}')"></a>
         </div>
       </ion-item>
     </ion-list>
